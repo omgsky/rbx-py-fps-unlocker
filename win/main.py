@@ -13,7 +13,7 @@ client_app_settings_json = os.path.join(client_settings, "ClientAppSettings.json
 
 os.makedirs(client_settings, exist_ok=True)
 
-with open(client_settings, "w") as f:
+with open(client_app_settings_json, "w") as f:
     json.dump({
         "DFIntTaskSchedulerTargetFps": 1000
     }, f)
